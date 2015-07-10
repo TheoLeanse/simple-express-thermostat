@@ -7,7 +7,7 @@ app.set('view engine', 'jade');
 
 app.use(express.static(__dirname + '/public'));
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false })); // this allows the body to be filled
 
 app.get('/', function(req, res, next) {
