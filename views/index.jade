@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h2#temperature
+    button#up up
+    button#down down
+    button#reset reset
+    input#powersaver(type='checkbox',checked)
+    | Power Save On
+    br
+    p The temperature in
+      span#location
+      |  is
+      span#locationTemp
+      |  degrees C.
+    br
+
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true')
+    script(src='https://code.jquery.com/jquery-2.1.4.js')
+    script(src='javascripts/thermostat.js')
+    script(src='javascripts/stuff.js')
+    script(src='javascripts/location.js')
