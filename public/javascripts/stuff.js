@@ -1,5 +1,3 @@
-// HERE BEGINS THE ORIGINAL APP CODE:
-
 var updateDisplay = function() {
   $('#temperature').html(thermostat.temp);
   $('#temperature').css('color', thermostat.colour);
@@ -10,7 +8,17 @@ function postToTemp(temperature) {
 }
 
 thermostat = new Thermostat();
-updateDisplay(); // window.onload ...?
+
+updateDisplay(); // replace with setTemp();
+// setTemp();
+
+function setTemp() {
+  $.getJSON('/temperature', function(data) {
+    console.log(data);
+    thermostat.temp = data.temperature;
+    updateDisplay();
+  });
+}
 
 // if you can add multiple event listeners at the same time, add up-arrow?
 
@@ -18,9 +26,6 @@ $('#up').click(function() {
   thermostat.increase();
   updateDisplay();
   postToTemp({ temperature: thermostat.temp });
-  // send a $.post() thing to the server in order to update the temperature value saved in the session.
-  // $.post( '/temperature', { temp: thermostat.temp })
-  // or
 });
 
 $('#down').click(function() {
