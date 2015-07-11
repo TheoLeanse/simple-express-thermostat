@@ -1,4 +1,5 @@
 var updateDisplay = function() {
+  console.log('hi');
   $('#temperature').html(thermostat.temp);
   $('#temperature').css('color', thermostat.colour);
 };
@@ -19,8 +20,6 @@ function setTemp() {
     updateDisplay();
   });
 }
-
-// if you can add multiple event listeners at the same time, add up-arrow?
 
 $('#up').click(function() {
   thermostat.increase();
@@ -43,15 +42,3 @@ $('#reset').click(function() {
 $('#powersaver').click(function() {
   thermostat.powerSave = !thermostat.powerSave;
 });
-
-// touchscreen clickwheel for mobile?
-
-// function openweatherAPICall(latitude, longitude) {
-//   return 'http://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude;
-// }
-//
-// var apiCall = openweatherAPICall(latitude, longitude);
-
-
-// return formatted address for lat/longitude - reverse geocoding with Google Maps API
-// adjust thermostat accordingly
