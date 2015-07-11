@@ -1,6 +1,7 @@
 var express    = require('express');
 var bodyParser = require('body-parser');
 var session    = require('express-session');
+var redisStore = require('connect-redis')(session);
 
 var app = express();
 
