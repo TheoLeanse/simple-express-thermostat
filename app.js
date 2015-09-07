@@ -1,10 +1,11 @@
 var express    = require('express'),
+    path       = require('path'),
     bodyParser = require('body-parser'),
     session    = require('express-session');
 
 var app = express();
 
-app.set('views', './views'); // path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(express.static(__dirname + '/public'));
@@ -16,7 +17,6 @@ app.use(session({
 }));
 
 app.get('/', function(req, res, next) {
-  console.log(req.session.temperature);
   if (req.session == null) {
     req.session.temperature = 20;
   }
