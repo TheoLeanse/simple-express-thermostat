@@ -1,5 +1,4 @@
 var updateDisplay = function() {
-  console.log('hi');
   $('#temperature').html(thermostat.temp);
   $('#temperature').css('color', thermostat.colour);
 };
