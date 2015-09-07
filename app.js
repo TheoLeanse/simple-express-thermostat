@@ -17,7 +17,7 @@ app.use(session({
 
 app.get('/', function(req, res, next) {
   console.log(req.session.temperature);
-  if (req.session == undefined) {
+  if (req.session == null) {
     req.session.temperature = 20;
   }
   req.session.hi = "Hello wirral";
