@@ -30,11 +30,11 @@ Lovely.
 
 This is, for my money, the nicest part of the app! (link to code?)
 
-**myApp.location.addressData**
-
-To use:
+To reverse-geocode a set of coordinate with :
 ```js
-myApp.location.addressData(lat, lng);
+myApp.location.addressData({lat: latitude, lng: longitude}, function (streetAddress) {
+  // where streetAddress is a formatted string with street name and house number. Creepy.
+});
 ```
 
 **myApp.location.weatherData(lat, lng)**
