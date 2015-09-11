@@ -10,7 +10,7 @@ Simple Express app allowing a user to adjust their temperature based on local we
 
 - Then `$ npm start` will serve up the app (check out http://localhost:3000).
 
-### The lovely Gruntfile!
+### The lovely Gruntfile
 
 - If you want to muck about in the code, install all the dev dependencies first with `$ npm install`
 
