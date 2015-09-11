@@ -1,6 +1,6 @@
 ## Thermostat
 
-badges
+[![Code Climate](https://codeclimate.com/github/TheoLeanse/simple-express-thermostat/badges/gpa.svg)](https://codeclimate.com/github/TheoLeanse/simple-express-thermostat)
 
 heroku link
 
