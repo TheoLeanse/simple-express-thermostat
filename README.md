@@ -30,7 +30,8 @@ Lovely.
 
 This is, for my money, the nicest part of the app! (link to code?)
 
-To reverse-geocode a set of coordinate with :
+For any given coordinate, find the Street Address and the local temperature:
+
 ```js
 myApp.location.addressData({lat: latitude, lng: longitude}, function (streetAddress) {
   // pass in a callback of your choice (perhaps updating the DOM?)
@@ -38,9 +39,6 @@ myApp.location.addressData({lat: latitude, lng: longitude}, function (streetAddr
 });
 ```
 
-**myApp.location.weatherData(lat, lng)**
-
-To use:
 ```js
 myApp.location.weatherData({ lat: latitude, lng: longitude }, function (localTemperature) {
   // pass in a callback of your choice (perhaps updating the DOM?)
