@@ -6,13 +6,15 @@ Simple Express app allowing a user to adjust their temperature based on local we
 
 `$ git clone https://github.com/TheoLeanse/simple-express-thermostat/ && cd simple-express-thermostat` to clone this repo and navigate to that new, cloned directory.
 
-`$ npm install` to load express from npm. You gotta have Node.js installed first, mind!
+`$ npm install --production` to load express from npm. You gotta have Node.js installed first, mind!
 
 Then `$ npm start` will serve up the app (check out http://localhost:3000).
 
 ### The lovely Gruntfile!
 
-Run `$ grunt` from the CLI.
+If you want to muck about in the code, install all the dev dependencies first with `$ npm install`
+
+Then `$ grunt`...
 
 This will install bower dependencies (jasmine-core), run the test suite via karma, and watch for changes to source and spec files.
 
