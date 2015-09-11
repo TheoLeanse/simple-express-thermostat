@@ -41,7 +41,7 @@ myApp.location.addressData(lat, lng);
 
 To use:
 ```js
-location.weatherData({ lat: latitude, lng: longitude }, function (data) {
+myApp.location.weatherData({ lat: latitude, lng: longitude }, function (data) {
   //callback  
 });
 ```
