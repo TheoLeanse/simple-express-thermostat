@@ -65,7 +65,10 @@ It's possible to set a new default for the thermostat, too:
 
 ```js
 var hotterThermostat = new myApp.Thermostat(25);
-thermostat.temp;
+```
+
+```js
+$ thermostat.temp;
 =>25
 ```
 
