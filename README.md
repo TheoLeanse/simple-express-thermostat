@@ -84,6 +84,8 @@ To restore default temperature:
 thermostat.resetTemp;
 ```
 
+It's possible to set a new default for the thermostat, too:
+
 ```js
 var hotterThermostat = new myApp.Thermostat(25);
 thermostat.temp;
