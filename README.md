@@ -33,8 +33,8 @@ This is, for my money, the nicest part of the app! (link to code?)
 To reverse-geocode a set of coordinate with :
 ```js
 myApp.location.addressData({lat: latitude, lng: longitude}, function (streetAddress) {
-  // pass in a callback of your choice
-  // streetAddress is a formatted string with street name and house number (creepy, no?).
+  // pass in a callback of your choice (perhaps updating the DOM?)
+  // streetAddress is a formatted string with street name and house number (creepy, no?)
 });
 ```
 
@@ -42,8 +42,9 @@ myApp.location.addressData({lat: latitude, lng: longitude}, function (streetAddr
 
 To use:
 ```js
-myApp.location.weatherData({ lat: latitude, lng: longitude }, function (data) {
-  //callback  
+myApp.location.weatherData({ lat: latitude, lng: longitude }, function (localTemperature) {
+  // pass in a callback of your choice (perhaps updating the DOM?)
+  // localTemperature is an integer representing degrees Celcius
 });
 ```
 
