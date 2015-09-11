@@ -26,7 +26,7 @@ Lovely.
 
 ### Using the API
 
-#### working with location-specific data
+**working with location-specific data**
 
 This is, for my money, the nicest part of the app! (link to code?)
 
@@ -46,9 +46,7 @@ myApp.location.weatherData({ lat: latitude, lng: longitude }, function (localTem
 });
 ```
 
-#### Using the Thermostat itself:
-
-**myApp.Thermostat**
+**Using the Thermostat itself:**
 
 For a new Thermostat:
 
