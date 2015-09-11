@@ -4,17 +4,17 @@ Simple Express app allowing a user to adjust their temperature based on local we
 
 ### To install
 
-`$ git clone https://github.com/TheoLeanse/simple-express-thermostat/ && cd simple-express-thermostat` to clone this repo and navigate to that new, cloned directory.
+- `$ git clone https://github.com/TheoLeanse/simple-express-thermostat/ && cd simple-express-thermostat` to clone this repo and navigate to that new, cloned directory.
 
-`$ npm install --production` to load express from npm. You gotta have Node.js installed first, mind!
+- `$ npm install --production` to load express from npm. You gotta have Node.js installed first, mind!
 
-Then `$ npm start` will serve up the app (check out http://localhost:3000).
+- Then `$ npm start` will serve up the app (check out http://localhost:3000).
 
 ### The lovely Gruntfile!
 
-If you want to muck about in the code, install all the dev dependencies first with `$ npm install`
+- If you want to muck about in the code, install all the dev dependencies first with `$ npm install`
 
-Then `$ grunt`...
+- Then just `$ grunt`...
 
 This will install bower dependencies (jasmine-core), run the test suite via karma, and watch for changes to source and spec files.
 
