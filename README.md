@@ -4,13 +4,22 @@ Simple Express app allowing a user to adjust their temperature based on local we
 
 ### Cloning
 
+`$ git clone https://github.com/TheoLeanse/simple-express-thermostat/` to clone this repo.
+
+`$ npm install` to load in dependencies via npm.
+
+`$ npm start` will serve the app on http://localhost:3000.
+
 ### Testing
 
-`$ grunt jasmine` to run JS unit tests.
+Run `$ grunt` from the CLI.
 
-For config, see GruntFile and jasmine.json
+This will install bower dependencies (jasmine-core), run the test suite via karma, and watch for changes to source and spec files.
 
-Much more convenient than having to tab to a browser to run the SpecRunner, and I prefer installing via npm (but the grunt-contrib-jasmine package outputs a custom SpecRunner in case of booboos).
+Test results are output to the console and to the browser via live reload (browsersync).
+
+JSlint results, too!
+
 
 ### Using the API
 
