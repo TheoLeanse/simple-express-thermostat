@@ -26,9 +26,9 @@ Lovely.
 
 ### Using the API
 
-1) displaying Location-specific data
+#### working with location-specific data
 
-For my money the nicest part of the app! (link to code?)
+This is, for my money, the nicest part of the app! (link to code?)
 
 **myApp.location.addressData**
 
@@ -46,10 +46,7 @@ location.weatherData({ lat: latitude, lng: longitude }, function (data) {
 });
 ```
 
-
-
-
-2) the Thermostat
+#### Using the Thermostat itself:
 
 **myApp.Thermostat**
 
