@@ -6,7 +6,7 @@ Simple Express app allowing a user to adjust their temperature based on local we
 
 `$ git clone https://github.com/TheoLeanse/simple-express-thermostat/ && cd simple-express-thermostat` to clone this repo and navigate to that new, cloned directory.
 
-`$ npm install` to load express from npm. You gotta have Node.js installed first, please!
+`$ npm install` to load express from npm. You gotta have Node.js installed first, mind!
 
 Then `$ npm start` will serve up the app (check out http://localhost:3000).
 
