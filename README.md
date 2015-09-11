@@ -63,12 +63,18 @@ $ thermostat.temp;
 20
 ```
 
-Turn it up or down:
+It's possible to set a new default for the thermostat, too:
 
 ```js
-thermostat.increase();
-thermostat.decrease();
+var hotterThermostat = new myApp.Thermostat(25);
+thermostat.temp;
+=>25
 ```
+
+
+Turn it up or down with
+
+`thermostat.increase();` and `thermostat.decrease();`
 
 Power save mode is on by default, so the thermosat is capped at 25.
 
@@ -84,10 +90,3 @@ To restore default temperature:
 thermostat.resetTemp;
 ```
 
-It's possible to set a new default for the thermostat, too:
-
-```js
-var hotterThermostat = new myApp.Thermostat(25);
-thermostat.temp;
-=>25
-```
